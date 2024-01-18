@@ -28,7 +28,7 @@ jobs:
       - name: Set Up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: 11
+          java-version: 17
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
@@ -42,5 +42,5 @@ jobs:
       - name: Slack Notification
         uses: craftech-io/slack-action@v1
         with:
-          slack_webhook_url: "https://hooks.slack.com/services/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"
+          slack_webhook_url: "https://hooks.slack.com/services/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"
         if: always()
